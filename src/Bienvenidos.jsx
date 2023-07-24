@@ -7,7 +7,7 @@ function Bienvenido() {
         <>
         <div className='bienvenido'>
                 <div  className='text-div'>
-                    <h1 className="text-3xl font-bold">BIENVENIDOS!</h1>
+                    <h1 >BIENVENIDOS!</h1>
                     <p>
                         At Viva Jalisco, flavor and generous portions take center stage, setting it apart from the rest.  <br />
                         What sets this restaurant apart is their unwavering commitment to preserving the authentic flavors
@@ -20,9 +20,9 @@ function Bienvenido() {
                     <h4 className='font-bold'>VIVA JALISCO MEXICAN RESTAURANT <br />
                         IS LOCATED IN BOTHELL, WASHINGTON <br />
             
-                        <span className='text-sm font-medium'>1715 228th St SE UNIT 102</span></h4>
+                        <span >1715 228th St SE UNIT 102</span></h4>
                 </div>
-            <div className='div3 flex justify-around'>
+            <div className='div3 flex justify-around items-center'>
                 {/* primer div */}
                 <div className='contenedor1-div3 flex'>
                 <div className='item1-div3'>

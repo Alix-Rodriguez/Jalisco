@@ -17,7 +17,7 @@ function About() {
                         <h1>ABOUT <span>US</span></h1>
                         <p>
                             Allow me to introduce Norma and Jose, the passionate owners of Viva Jalisco, a typical  Mexican restaurant located in Bothell, Washington. Hailing from Tototlán, Jalisco, they bring with them the rich cultural heritage of this enchanting region, known as the cradle of Mexican culture.
-                            <br />
+                            <br /> <br />
                             Jalisco, the birthplace of tequila, mariachi music, and charrerias, has a deep-rooted tradition of celebrating life and embracing its unique flavors. Norma and Jose's journey from Tototlán to Bothell is a testament to their love for sharing the authentic taste of their homeland with the local community.
 
                         </p>

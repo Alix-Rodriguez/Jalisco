@@ -32,7 +32,7 @@ function Menu() {
             <div id="menu" className='contenedor_menu flex flex-col items-center justify-center'>
                 <h1>Menus</h1>
                 <div>
-                    <div className="flex  justify-center items-center">
+                    <div className="div_botones flex  justify-center items-center">
                         <button style={btn1} className="py-2 px-4 btn-hover rounded-full m-2">MENU</button>
                         <button style={btn1} className="py-2 px-4  btn-hover rounded-full m-2">LUNCH</button>
                         <button style={btn1} className="py-2 px-4  btn-hover rounded-full m-2">KID’S</button>
@@ -42,7 +42,7 @@ function Menu() {
 
             <div style={backgroundStyle1} className='margarita flex flex-col items-center justify-end'>
                 <div>
-                    <div className="flex  justify-center items-center">
+                    <div className="div_botones flex  justify-center items-center">
                         <button style={btn1} className="py-2 px-4 btn-hover rounded-full m-2">DRINKS</button>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ function Menu() {
             <img src={img7} alt="imagen comida" />
             <h1>PARTY PLATTERS?</h1>
                 <div>
-                    <div className="flex  justify-center items-center">
+                    <div className="div_botones flex  justify-center items-center">
                         <button style={btn1} className="py-2 px-4 btn-hover rounded-full m-2">TOGO HERE</button>
                     </div>
                 </div>

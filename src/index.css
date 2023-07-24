@@ -5,13 +5,17 @@
 
 @font-face {
     font-family: 'Commador';
-    src: url('./assets/FONTS/Commador.ttf');
+    src: url('./assets/FONTS/Commador.otf');
 }
-  
+
 
 :root {
     overflow-x: hidden;
 }
+
+/* .text-sm {
+    font-size: 1.875rem !important;
+} */
 
 .nav-hidden {
     display: none;
@@ -34,7 +38,7 @@
 
 .home_welcome {
     position: absolute;
-    top: 16rem;
+    top: 27rem;
     width: 100%;
     height: 200px;
     left: 50%;
@@ -43,16 +47,19 @@
 }
 
 .home_welcome h1 {
-    font-size: 8rem;
-    line-height: 30px;
+    font-size: 228px;
+    line-height: 70px;
     color: #ffffff;
     font-family: "Commador";
     filter: drop-shadow(0px 25px 4.5px rgba(0, 0, 1, 0.59));
+    font-weight: 100;
+    transform: scaleY(128%);
 }
 
 .home_welcome h1 span {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     letter-spacing: 5px;
+    font-family: unset !important;
 }
 
 
@@ -60,8 +67,9 @@
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
-    font-family: "Montserrat Roman";
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    transform: translateY(2rem);
     filter: drop-shadow(0px 25px 4.5px rgba(0, 0, 1, 0.59));
 
 }
@@ -91,9 +99,10 @@
 } */
 
 /* CONTENEDOR BIENVENIDOS */
-.bienvenido{
+.bienvenido {
     height: 100vh;
 }
+
 .text-div {
     display: flex;
     flex-direction: column;
@@ -103,13 +112,25 @@
     height: 60vh;
 }
 
-.text-div p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 25px;
+.text-div h1 {
+    font-size: 183px;
+    letter-spacing: -6px;
+    line-height: 13rem;
+    text-transform: uppercase;
     color: #343434;
-    font-weight: 200;
-    width: 77%;
+    font-family: "Commador";
+}
+
+
+.text-div p {
+    width: 90%;
+    height: 234px;
+    font-size: 23px;
+    line-height: 34px;
+    color: #343434;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .text-div2 {
@@ -123,13 +144,24 @@
 }
 
 .text-div2 h4 {
-    font-size: 22px;
+    font-size: 30px;
     letter-spacing: -1px;
-    line-height: 24px;
+    line-height: 27px;
     text-transform: uppercase;
     color: #004857;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+}
+
+.text-div2 h4 span {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #004857b0;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .div3 {
@@ -148,18 +180,21 @@
 }
 
 .item1-div3 h1 {
-    font-size: 34px;
-    letter-spacing: -2px;
+    font-size: 83px;
+    letter-spacing: -3px;
+    line-height: 76px;
+    text-transform: uppercase;
     color: #004857;
-    font-weight: 700;
-    line-height: 1;
+    font-family: "Commador";
+    text-align: right;
 }
 
 .item2-div3 h1 {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 23px;
+    line-height: 27px;
     color: #004857;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item2-div3 h1 span {
@@ -171,10 +206,12 @@
 }
 
 .contenedor2-div3 h1 {
-    font-size: 24px;
-    line-height: 18px;
-    color: #fff;
-    font-weight: 700;
+    font-size: 83px;
+    color: #ffffff;
+    font-family: "Commador";
+    text-align: center;
+    line-height: 40px;
+    /* padding-top: 6rem; */
 }
 
 .contenedor2-div3 h1 .span1 {
@@ -182,7 +219,13 @@
 }
 
 .span2 {
-    font-size: 15px;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    line-height: 0;
+    color: #004857;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
 }
 
 .span3 {
@@ -216,12 +259,13 @@
 }
 
 .item2_about h1 {
-    font-size: 44px;
-    letter-spacing: -1px;
+    font-size: 120px;
+    letter-spacing: -6px;
+    line-height: 157px;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 700;
-    /* font-family: "Commador"; */
+    font-family: "Commador";
+    text-align: center;
 }
 
 .item2_about h1 span {
@@ -229,11 +273,13 @@
 }
 
 .item2_about p {
-    font-size: 13px;
-    line-height: 13px;
+    width: 601px;
+    height: 485px;
+    font-size: 22px;
+    line-height: 23px;
     color: #004857;
-    font-weight: 500;
-    /* font-family: "Montserrat Roman"; */
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
 }
 
@@ -246,13 +292,19 @@
 }
 
 .contenedor_menu h1 {
-    font-size: 160px;
-    letter-spacing: 9px;
-    line-height: 171px;
+    font-size: 442px;
+    letter-spacing: -15px;
+    line-height: 469px;
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Commador";
-    /* text-align: right; */
+    text-align: right;
+}
+
+.div_botones button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.5rem;
 }
 
 .btn-hover:hover {
@@ -261,15 +313,16 @@
 
 
 
+
 .margarita p {
-    width: 30%;
-    font-size: 18px;
+    width: 31%;
+    height: 131px;
+    font-size: 22px;
     line-height: 23px;
     color: #ffffff;
     font-weight: 300;
-    font-family: "Montserrat Roman";
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 .platos_comida {
@@ -281,19 +334,22 @@
     top: 0;
 }
 
+
 .platos_comida h1 {
-    font-size: 395%;
-    letter-spacing: 1px;
-    line-height: 100px;
+    font-size: 232px;
+    letter-spacing: -8px;
+    line-height: 235px;
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Commador";
-    filter: drop-shadow(0px 36px 9px rgba(60, 63, 21, 31.33));
-    font-weight: 700;
+    filter: drop-shadow(0px 36px 9px rgba(0, 0, 1, 0.33));
+    text-align: center;
 }
 
 .platos_comida div div button {
     z-index: 1;
+    width: 13rem;
+    height: 4rem;
 }
 
 /* CONTENEDOR Galeria */
@@ -321,13 +377,13 @@
 
 /* CONTENEDOR Footer */
 
-.padre_footer{
-    height: 100vh;
+.padre_footer {
+    height: 80vh;
 }
 
 .footer_div1 {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-color: #004857;
 }
 
@@ -337,18 +393,18 @@
 
 .footer_div2 {
     width: 100%;
-     height: 30vh;
+    height: 30vh;
     padding: 3rem;
     background-color: #67bfb1;
 }
 
 
 .item1_footer h6 {
-    font-size: 15px;
-    line-height: 17px;
-    color: #ffffffa1;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
     font-weight: 300;
-    font-family: "Montserrat Roman";
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item1_footer h1 {
@@ -356,15 +412,15 @@
     line-height: 42px;
     color: #ffffff;
     font-weight: 800;
-    font-family: "Montserrat Roman";
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item1-div3-footer h1 {
-    font-size: 34px;
-    letter-spacing: -2px;
+    font-size: 75px;
+    line-height: 67px;
     color: #ffffff;
-    font-weight: 700;
-    line-height: 1;
+    font-family: "Commador";
+    text-align: right;
 }
 
 .item1-div3-footer {
@@ -372,10 +428,11 @@
 }
 
 .item2-div3-footer h1 {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 22px;
+    line-height: 28px;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: "Montserrat Roman";
 }
 
 .item2-div3-footer h1 span {
@@ -387,19 +444,82 @@
     line-height: 28px;
     color: #ffffff;
     font-weight: 500;
-    font-family: "Montserrat Roman";
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 /* RESPONSIVE */
+
+@media (max-width: 1618px) {
+
+    .home_welcome {
+        position: absolute;
+        top: 22rem;
+        width: 100%;
+        height: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .item1-div3 h1 {
+        font-size: 63px;
+    }
+
+    .contenedor2-div3 h1 {
+        font-size: 68px;
+    }
+
+    .span2 {
+        font-size: 2rem;
+    }
+
+    .span4 {
+        font-size: 19px;
+    }
+
+    .contenerdo1-about {
+        padding-top: 6rem;
+    }
+
+}
+
+
+@media (max-width: 1350px) {
+
+    .home_welcome {
+        top: 18rem;
+    }
+
+    .item1-div3 h1 {
+        font-size: 48px;
+        line-height: 53px;
+    }
+    .contenedor2-div3 h1 {
+        font-size: 57px;
+    }
+    .span2 {
+        font-size: 1.8rem;
+    }
+    .item2_about h1 {
+        font-size: 96px;
+    }
+    .item1_about img{
+        height: 60vh;
+    }
+}
+
+
+
 @media (max-width: 800px) {
-    
-    .text-div{
+
+    .text-div {
         height: 50vh;
     }
+
     .div3 {
-       flex-direction: column;
-       height: 30vh;
+        flex-direction: column;
+        height: 30vh;
     }
 
     .contenedor1-div3 {
@@ -415,19 +535,21 @@
     .contenerdo1-about {
         flex-direction: column;
     }
+
     .item1_about {
         width: unset;
     }
 
     .item2_about h1 {
-        color: #004857;   
+        color: #004857;
     }
+
     .item2_about p {
         text-align: center;
         padding-left: 1rem;
 
     }
-    
+
     .margarita p {
         width: 68%;
     }
@@ -435,16 +557,20 @@
     .platos_comida h1 {
         text-align: center;
     }
+
     .footer_div1 img {
         width: 90%;
     }
+
     .footer_div2 {
         height: 50vh;
         flex-direction: column;
     }
+
     .footer_div1 {
         height: 50vh;
     }
+
     .footer_div2 {
         height: 50vh;
         flex-direction: column;
@@ -453,13 +579,11 @@
 }
 
 @media (max-width: 600px) {
-    
-  
+
+
     .contenedor_menu h1 {
         font-size: 7rem;
     }
-    .galeria_img div:nth-of-type(1) , .galeria_img div:nth-of-type(2) , .galeria_img div:nth-of-type(3) , .galeria_img div:nth-of-type(4) {
-        /* height: 40vh !important; */
-        /* width: 100%; */
-    }
+
+
 }
