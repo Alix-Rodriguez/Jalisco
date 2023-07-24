@@ -91,6 +91,9 @@
 } */
 
 /* CONTENEDOR BIENVENIDOS */
+.bienvenido{
+    height: 100vh;
+}
 .text-div {
     display: flex;
     flex-direction: column;
@@ -192,6 +195,7 @@
 .about-cont {
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 61%, rgba(103, 191, 177, 1) 61%, rgba(103, 191, 177, 1) 75%, rgba(0, 172, 206, 1) 75%, rgba(0, 172, 206, 1) 76%);
     padding: 3rem 3rem 3rem 0;
+    height: 100vh;
 }
 
 .contenerdo1-about {
@@ -291,34 +295,35 @@
 /* CONTENEDOR Galeria */
 
 .galeria_img {
-    /* height: 50vh; */
-    height: 100%;
+    height: 100vh;
     grid-template: auto / 1fr 1fr 1fr 1fr;
 }
 
-/* .galeria_img img {
-    height: 100%;
-} */
 
 .galeria_img div:nth-of-type(1) img:nth-of-type(1),
 .galeria_img div:nth-of-type(2) img:nth-of-type(2),
 .galeria_img div:nth-of-type(3) img:nth-of-type(1),
 .galeria_img div:nth-of-type(4) img:nth-of-type(2) {
-    height: 18rem !important;
+    height: 60vh !important;
 }
 
 .galeria_img div:nth-of-type(1) img:nth-of-type(2),
 .galeria_img div:nth-of-type(2) img:nth-of-type(1),
 .galeria_img div:nth-of-type(3) img:nth-of-type(2),
 .galeria_img div:nth-of-type(4) img:nth-of-type(1) {
-    height: 10rem !important;
+    height: 40vh !important;
     width: 100%;
 }
 
 /* CONTENEDOR Footer */
+
+.padre_footer{
+    height: 100vh;
+}
+
 .footer_div1 {
     width: 100%;
-    height: 24rem;
+    height: 70vh;
     background-color: #004857;
 }
 
@@ -328,8 +333,7 @@
 
 .footer_div2 {
     width: 100%;
-    /* height: 12rem;
-     */
+     height: 30vh;
     padding: 3rem;
     background-color: #67bfb1;
 }
@@ -381,3 +385,5 @@
     font-weight: 500;
     font-family: "Montserrat Roman";
 }
+
+
