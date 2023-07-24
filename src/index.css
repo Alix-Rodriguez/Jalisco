@@ -100,6 +100,7 @@
     justify-content: center;
     align-items: center;
     padding: 3rem;
+    height: 60vh;
 }
 
 .text-div p {
@@ -118,6 +119,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    height: 20vh;
 }
 
 .text-div2 h4 {
@@ -133,6 +135,8 @@
 .div3 {
     background-color: #00acce;
     padding: 2rem;
+    height: 20vh;
+
 }
 
 .contenedor1-div3 {
@@ -237,7 +241,7 @@
 /* CONTENEDOR MENU */
 .contenedor_menu {
     width: 100%;
-    height: 27rem;
+    height: 100vh;
     background-color: #004857;
 }
 
@@ -387,3 +391,75 @@
 }
 
 
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    
+    .text-div{
+        height: 50vh;
+    }
+    .div3 {
+       flex-direction: column;
+       height: 30vh;
+    }
+
+    .contenedor1-div3 {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .text-div p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .contenerdo1-about {
+        flex-direction: column;
+    }
+    .item1_about {
+        width: unset;
+    }
+
+    .item2_about h1 {
+        color: #004857;   
+    }
+    .item2_about p {
+        text-align: center;
+        padding-left: 1rem;
+
+    }
+    
+    .margarita p {
+        width: 68%;
+    }
+
+    .platos_comida h1 {
+        text-align: center;
+    }
+    .footer_div1 img {
+        width: 90%;
+    }
+    .footer_div2 {
+        height: 50vh;
+        flex-direction: column;
+    }
+    .footer_div1 {
+        height: 50vh;
+    }
+    .footer_div2 {
+        height: 50vh;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    
+  
+    .contenedor_menu h1 {
+        font-size: 7rem;
+    }
+    .galeria_img div:nth-of-type(1) , .galeria_img div:nth-of-type(2) , .galeria_img div:nth-of-type(3) , .galeria_img div:nth-of-type(4) {
+        /* height: 40vh !important; */
+        /* width: 100%; */
+    }
+}
