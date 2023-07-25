@@ -817,7 +817,7 @@
 
     .item2-div3 h1 {
         font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.1rem;
     letter-spacing: 0rem;
     width: 14rem;
     }
@@ -825,7 +825,7 @@
     .contenedor2-div3 h1 {
         font-size: 2rem;
         letter-spacing: 0.05rem;
-        line-height: 0.9rem;
+        line-height: 0.8rem;
         width: 18rem;
 
     }
@@ -951,6 +951,7 @@
 
     .items-center {
         flex-direction: column;
+        gap: 1rem;
     }
 
     .footer_div2 {
