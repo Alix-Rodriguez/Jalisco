@@ -799,12 +799,12 @@
     }
 
     .text-div2 h4 {
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 1rem;
     }
 
     .text-div2 h4 span {
-        font-size: 12px;
+        font-size: 1rem;
         line-height: 1rem;
     }
 
@@ -854,16 +854,13 @@
 
     .item2_about p {
         text-align: justify;
-        padding-left: 2.2rem;
-        font-size: 0.6rem;
-        width: 20rem;
-        line-height: 0.8rem;
+        padding-left: 3.2rem;
+        font-size: 1rem;
+        width: 23rem;
+        line-height: 1rem;
     }
 
-    .item2_about {
-        padding-top: 1rem;
-    }
-
+   
 
     .div3 {
         height: 45vh;
@@ -963,10 +960,8 @@
     }
 
     .about-cont {
-        padding-top: 22rem;
-
+        height: 133vh;
     }
-
 
 }
 
