@@ -47,19 +47,19 @@
 }
 
 .home_welcome h1 {
-    font-size: 228px;
-    line-height: 70px;
+    font-size: 11rem;
+    line-height: 44px;
     color: #ffffff;
     font-family: "Commador";
     filter: drop-shadow(0px 25px 4.5px rgba(0, 0, 1, 0.59));
-    font-weight: 100;
     transform: scaleY(128%);
+    font-weight: unset;
 }
 
 .home_welcome h1 span {
-    font-size: 3.5rem;
-    letter-spacing: 5px;
-    font-family: unset !important;
+    font-size: 1.5rem;
+    letter-spacing: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -109,13 +109,13 @@
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    height: 60vh;
+    height: 55vh;
 }
 
 .text-div h1 {
-    font-size: 183px;
+    font-size: 8rem;
     letter-spacing: -6px;
-    line-height: 13rem;
+    line-height: 10rem;
     text-transform: uppercase;
     color: #343434;
     font-family: "Commador";
@@ -123,12 +123,12 @@
 
 
 .text-div p {
-    width: 90%;
+    width: 67%;
     height: 234px;
     font-size: 23px;
     line-height: 34px;
     color: #343434;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -159,15 +159,15 @@
     letter-spacing: -1px;
     line-height: 44px;
     text-transform: uppercase;
-    color: #004857b0;
-    font-weight: bold;
+    color: #004857;
+    font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
 }
 
 .div3 {
     background-color: #00acce;
-    padding: 2rem;
-    height: 20vh;
+    padding: 7rem;
+    height: 25vh;
 
 }
 
@@ -180,9 +180,9 @@
 }
 
 .item1-div3 h1 {
-    font-size: 83px;
+    font-size: 61px;
     letter-spacing: -3px;
-    line-height: 76px;
+    line-height: 62px;
     text-transform: uppercase;
     color: #004857;
     font-family: "Commador";
@@ -198,7 +198,8 @@
 }
 
 .item2-div3 h1 span {
-    color: #0048579a;
+    color: #004857;
+    font-weight: lighter;
 }
 
 .contenedor2-div3 {
@@ -206,7 +207,7 @@
 }
 
 .contenedor2-div3 h1 {
-    font-size: 83px;
+    font-size: 69px;
     color: #ffffff;
     font-family: "Commador";
     text-align: center;
@@ -219,10 +220,10 @@
 }
 
 .span2 {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 8px;
     line-height: 0;
-    color: #004857;
+    color: #fff;;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
@@ -233,8 +234,11 @@
 }
 
 .span4 {
-    font-size: 15px;
-    color: #0048579a;
+    font-size: 22px;
+    color: #004857;
+    font-weight: initial;
+    letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* CONTENEDOR ABOUT */
@@ -243,6 +247,9 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 61%, rgba(103, 191, 177, 1) 61%, rgba(103, 191, 177, 1) 75%, rgba(0, 172, 206, 1) 75%, rgba(0, 172, 206, 1) 76%);
     padding: 3rem 3rem 3rem 0;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenerdo1-about {
@@ -250,8 +257,11 @@
 }
 
 .item1_about {
-    width: 263rem;
     margin-right: 2rem;
+}
+
+.item1_about img{
+    height: 52rem;
 }
 
 .item2_about {
@@ -336,7 +346,7 @@
 
 
 .platos_comida h1 {
-    font-size: 232px;
+    font-size: 9.5rem;
     letter-spacing: -8px;
     line-height: 235px;
     text-transform: uppercase;
@@ -388,7 +398,7 @@
 }
 
 .footer_div1 img {
-    width: 45%;
+    width: 40%;
 }
 
 .footer_div2 {
@@ -403,7 +413,7 @@
     font-size: 22px;
     line-height: 28px;
     color: #ffffff;
-    font-weight: 300;
+    font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -436,11 +446,13 @@
 }
 
 .item2-div3-footer h1 span {
-    color: #ffffff9a;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item3_footer h6 {
-    font-size: 22px;
+    font-size: 2rem;
     line-height: 28px;
     color: #ffffff;
     font-weight: 500;
