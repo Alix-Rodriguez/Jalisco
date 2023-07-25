@@ -869,7 +869,7 @@
     }
 
     .div_botones button {
-        width: 4rem;
+        width: 22vh;
         height: unset;
         font-size: 0.6rem;
     }
@@ -889,7 +889,7 @@
 
     .platos_comida div div button {
         z-index: 1;
-        width: 6rem;
+        width: 22vh;
         height: 1.8rem;
         font-size: .7rem;
         padding-bottom: 1.5rem;
