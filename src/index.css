@@ -842,8 +842,8 @@
 
     .item1_about img {
         height: 46vh;
+        width: 100%;
     }
-
     .item2_about h1 {
         color: #004857;
         font-size: 4rem;
@@ -956,12 +956,17 @@
     }
 
     .footer_div2 {
-        height: 60vh;
+        height: 66vh;
     }
 
     .about-cont {
         height: 133vh;
+        overflow: hidden;
     }
+    .padre_footer {
+        height: 90vh;
+    }
+    
 
 }
 
