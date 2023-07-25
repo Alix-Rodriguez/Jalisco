@@ -12,6 +12,7 @@
 :root {
     overflow-x: hidden;
 }
+
 * {
     scroll-behavior: smooth;
 }
@@ -38,7 +39,7 @@
 /* CONTENEDOR HOME */
 .header_nav {
     width: 100%;
-    z-index: 3;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -150,17 +151,18 @@
     text-align: center;
     width: 100%;
     z-index: 1;
-    
+
 }
 
-.home_sombra{
-    background: linear-gradient(180deg, rgba(0,72,87,1) 0%, rgba(255,255,255,0) 100%);
+.home_sombra {
+    background: linear-gradient(180deg, rgba(0, 72, 87, 1) 0%, rgba(255, 255, 255, 0) 100%);
     background-position: top center;
     height: 100vh;
     width: 100%;
     position: absolute;
     z-index: 1;
 }
+
 /* .menu-D {
     z-index: 3 !important;
     position: relative;
@@ -703,7 +705,7 @@
     }
 
     .item1_about {
-    margin-right: unset !important;
+        margin-right: unset !important;
     }
 
     .item1_about {
@@ -785,15 +787,17 @@
 
     .text-div p {
         width: 85%;
-         font-size: 1rem;
+        font-size: 1rem;
         line-height: 1rem;
     }
+
     .text-div {
         height: 50vh;
         padding: 0;
         gap: 1rem;
         padding-bottom: 4rem;
     }
+
     .text-div2 h4 {
         font-size: 0.8rem;
         line-height: 1rem;
@@ -805,33 +809,35 @@
     }
 
     .item1-div3 h1 {
-        font-size: 0.8rem;
-        line-height: 1rem;
+        font-size: 2rem;
+        line-height: 1.7rem;
         letter-spacing: 0.05rem;
+        width: 15rem;
     }
 
     .item2-div3 h1 {
-        font-size: 0.5rem;
-        line-height: .6rem;
-        letter-spacing: 0.0rem;
+        font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0rem;
+    width: 14rem;
     }
 
     .contenedor2-div3 h1 {
-        font-size: 23px;
+        font-size: 2rem;
         letter-spacing: 0.05rem;
         line-height: 0.9rem;
-        width: 11rem;
+        width: 18rem;
 
     }
 
     .span2 {
-        font-size: 0.5rem;
-        letter-spacing: 8px;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
         line-height: 0.1rem;
     }
 
     .span4 {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     .item1_about img {
@@ -860,11 +866,11 @@
 
 
     .div3 {
-        height: 30vh;
+        height: 45vh;
     }
 
     .bienvenido {
-        height: 100vh;
+        height: 115vh;
     }
 
     .contenedor_menu {
@@ -1004,6 +1010,7 @@
         width: 10rem;
         margin-left: 2rem;
     }
+
     .contenedor2-div3 h1 {
         font-size: 1.5rem;
     }
