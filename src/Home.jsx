@@ -48,7 +48,7 @@ function Home() {
                     ))}
                 </Carousel>
                 <div className='home_welcome'>
-                    <h1 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>WELCOME <br />
+                    <h1>WELCOME <br />
                         <span>TO VIVA JALISCO</span></h1>
                     <p>Our Kitchen is the expression of our Mexican <br />
                         culture through good food.</p>

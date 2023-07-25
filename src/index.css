@@ -733,22 +733,22 @@
 @media (max-width: 414px) {
 
     .home_welcome h1 {
-        font-size: 1.4rem;
-        line-height: 12px;
+        font-size: 4.4rem;
+        line-height: 20px;
     }
 
     .home_welcome {
-        top: 7rem;
+        top: 20rem;
     }
 
     .home_welcome h1 span {
-        font-size: 0.5rem;
-        letter-spacing: 0.05rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.4rem;
     }
 
     .home_welcome p {
-        font-size: 5px;
-        line-height: 7px;
+        font-size: 10px;
+        line-height: 1.1rem;
         transform: translateY(0.2rem);
     }
 
@@ -931,22 +931,19 @@
 
 
 @media (max-width: 280px) {
-    .home_welcome {
-        top: 5rem;
-    }
 
     .home_welcome h1 {
-        font-size: 1rem;
-        line-height: 8px;
+        font-size: 2.5rem;
+        line-height: 11px;
     }
 
     .home_welcome h1 span {
-        font-size: 0.3rem;
+        font-size: 0.35rem;
     }
 
     .home_welcome p {
-        font-size: 4px;
-        line-height: 6px;
+        font-size: 6px;
+        line-height: 9px;
     }
 
     .text-div p {
