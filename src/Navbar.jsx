@@ -82,6 +82,9 @@ function Navbar() {
             
         } 
       });
+
+      
+    
  
     return (
         <Disclosure  as="nav" className="header_nav">
