@@ -223,7 +223,8 @@
     font-size: 2rem;
     letter-spacing: 8px;
     line-height: 0;
-    color: #fff;;
+    color: #fff;
+    ;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
@@ -260,7 +261,7 @@
     margin-right: 2rem;
 }
 
-.item1_about img{
+.item1_about img {
     height: 52rem;
 }
 
@@ -294,8 +295,8 @@
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     padding-left: 0.5rem;
-     
-    
+
+
 }
 
 
@@ -313,7 +314,7 @@
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Commador";
-    text-align: right;
+    text-align: center;
 }
 
 .div_botones button {
@@ -338,6 +339,7 @@
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-bottom: 12rem;
 }
 
 .platos_comida {
@@ -448,7 +450,7 @@
     line-height: 28px;
     color: #ffffff;
     font-weight: 500;
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item2-div3-footer h1 span {
@@ -465,13 +467,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.item3_footer .flex{
+.item3_footer .flex {
     width: 100%;
     justify-content: space-around;
 }
-.item3_footer .flex a img{
+
+.item3_footer .flex a img {
     width: 3rem;
 }
+
 /* RESPONSIVE */
 
 @media (max-width: 1618px) {
@@ -509,7 +513,7 @@
 }
 
 
-@media (max-width: 1350px) {
+@media (max-width: 1450px) {
 
     .home_welcome {
         top: 18rem;
@@ -519,18 +523,86 @@
         font-size: 48px;
         line-height: 53px;
     }
+
     .contenedor2-div3 h1 {
         font-size: 57px;
     }
+
     .span2 {
         font-size: 1.8rem;
     }
+
     .item2_about h1 {
         font-size: 96px;
     }
-    .item1_about img{
+
+    .item1_about img {
         height: 60vh;
     }
+
+    .item1-div3-footer h1 {
+        font-size: 57px;
+        line-height: 56px;
+    }
+
+    .item1_footer h6 {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .item1_footer h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .item1_footer {
+        padding-left: 4rem;
+    }
+
+    .contenedor_menu h1 {
+        font-size: 22rem;
+    }
+
+    .text-div p {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .text-div p {
+        width: 79%;
+        font-size: 1.1rem;
+    }
+
+    .item1-div3-footer h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+
+    .item1_footer h1 {
+        font-size: 31px;
+        line-height: 37px;
+    }
+
+    .item2-div3-footer h1 {
+        font-size: 1.1rem;
+    }
+
+    .item3_footer h6 {
+        font-size: 1.5rem;
+    }
+
+    .platos_comida h1 {
+        line-height: 206px;
+        font-size: 7.5rem;
+    }
+
+    .margarita p {
+        padding-bottom: 15rem;
+    }
+
 }
 
 
@@ -604,10 +676,283 @@
 
 @media (max-width: 600px) {
 
-
     .contenedor_menu h1 {
         font-size: 7rem;
     }
+}
+
+@media (max-width: 414px) {
+
+    .home_welcome h1 {
+        font-size: 1.4rem;
+        line-height: 12px;
+    }
+
+    .home_welcome {
+        top: 7rem;
+    }
+
+    .home_welcome h1 span {
+        font-size: 0.5rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .home_welcome p {
+        font-size: 5px;
+        line-height: 7px;
+        transform: translateY(0.2rem);
+    }
+
+    .text-div h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        line-height: unset;
+    }
+
+    .text-div p {
+        width: 100%;
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    .text-div2 h4 {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .text-div2 h4 span {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    .item1-div3 h1 {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .item2-div3 h1 {
+        font-size: 0.5rem;
+        line-height: .6rem;
+        letter-spacing: 0.0rem;
+    }
+
+    .contenedor2-div3 h1 {
+        font-size: 23px;
+        letter-spacing: 0.05rem;
+        line-height: 0.9rem;
+    }
+
+    .span2 {
+        font-size: 0.4rem;
+        letter-spacing: 8px;
+        line-height: 0.1rem;
+    }
+
+    .span4 {
+        font-size: 7px;
+    }
+
+    .item1_about img {
+        height: 21vh;
+    }
+
+    .item2_about h1 {
+        color: #004857;
+        font-size: 4rem;
+        letter-spacing: 0.1rem;
+        line-height: 4.5rem;
+        padding-left: 2rem;
+    }
+
+    .item2_about p {
+        text-align: justify;
+        padding-left: 2.2rem;
+        font-size: 0.5rem;
+        width: 20rem;
+        line-height: 0.6rem;
+    }
+    .item2_about {
+        padding-top: 1rem;
+        padding-right: 0.5rem;
+    }
+
+    .about-cont {
+        height: 56vh;
+        padding-top: 22rem;
+    }
+
+    .div3 {
+        height: 20vh;
+    }
+    .bienvenido {
+        height: 94vh;
+    }
+    .contenedor_menu {
+        height: 40vh;
+    }
+    .contenedor_menu h1 {
+        font-size: 6rem;
+        letter-spacing: 0;
+        line-height: 6rem;
+    }
+    .div_botones button {
+        width: 4rem;
+        height: unset;
+        font-size: 0.6rem;
+    }
+
+    .margarita p {
+        width: 74%;
+        font-size: 0.6rem;
+        padding-bottom: 3rem;
+        line-height: 0.9rem;
+    }
+    .platos_comida h1 {
+        line-height: 50px;
+        font-size: 1.5rem;
+        letter-spacing: .5rem;
+    }
+    .platos_comida div div button {
+        z-index: 1;
+        width: 6rem;
+        height: 1.8rem;
+        font-size: .7rem;
+        padding-bottom: 1.5rem;
+    }
+    .platos_comida {
+        position: relative;
+        height: 36vh !important;
+    }
+    .margarita{
+        height: 50vh !important;
+    }
+    .footer_div1 img {
+        width: 60%;
+    }
+    .item1-div3-footer h1 {
+        font-size: 28px;
+        line-height: 31px;
+    }
+    .item2-div3-footer h1 {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+
+    .item1_footer {
+        padding-left: 0;
+    }
+
+    .contenedor1-div3 {
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media (max-width: 280px) {
+    .home_welcome {
+        top: 5rem;
+    }
+    .home_welcome h1 {
+        font-size: 1rem;
+        line-height: 8px;
+    }
+    .home_welcome h1 span {
+        font-size: 0.3rem;
+    }
+    .home_welcome p {
+        font-size: 4px;
+        line-height: 6px;
+    }
+    .text-div p {
+        width: 100%;
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+    }
+    .text-div2 h4 {
+        font-size: 0.5rem;
+        line-height: 0.6rem;
+    }
+    .text-div2 h4 span {
+        font-size: 9px;
+        line-height: 0.9rem;
+    }
+    .item1-div3 h1 {
+        font-size: 0.6rem;
+        line-height: .6rem;
+    }
+    .item2-div3 h1 {
+        font-size: 0.4rem;
+        line-height: .4rem;
+        letter-spacing: 0.0rem;
+        width: 6rem;
+    }
+    .contenedor2-div3 h1 {
+        font-size: 1rem;
+        width: 11rem;
+    }
+    .contenedor1-div3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .div3 {
+        padding: unset;
+    }
+    .div3 {
+        height: 24vh;
+    }
+    .item2_about h1 {
+        font-size: 2.5rem;
+    }
+    .item2_about p {
+        padding-left: 2.2rem;
+        font-size: 0.4rem;
+        width: 14rem;
+    }
+    .contenedor_menu h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .div_botones button {
+        width: 3rem;
+        font-size: 0.4rem;
+    }
+    .platos_comida div div button {
+        width: 5rem;
+        height: 0.8rem;
+        font-size: .4rem;
+        padding-bottom: 1rem;
+    }
+    .drinks{
+        padding-right: 2.5rem;
+    }
+    .platos_comida h1 {
+        line-height: 10px;
+        font-size: 0.6rem;
+        letter-spacing: .5rem;
+    }
+
+    .footer_div2 {
+        height: 73vh;
+    }
+    .item1_footer h1 {
+        font-size: 21px;
+    }
+    .item1_footer h6 {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .item1-div3-footer h1 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .item2-div3-footer h1 {
+        font-size: 0.6rem;
+        width: 9rem;
+    }
+
 
 
 }
