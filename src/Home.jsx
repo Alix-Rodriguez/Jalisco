@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Link } from 'react-scroll';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -35,7 +35,9 @@ function Home() {
         <>
 
             <Link to="home" smooth={true} duration={1000}></Link>
+            
             <div id="home" className="min-h-full">
+            <div className='home_sombra'></div>
                 {/* Aquí agregamos el componente Navbar */}
                 <Navbar />
                 {/* Fin del Navbar */}
@@ -47,12 +49,14 @@ function Home() {
                         </div>
                     ))}
                 </Carousel>
-                <div className='home_welcome'>
+                
+                <div className='home_welcome z-5 '>
                     <h1>WELCOME <br />
                         <span>TO VIVA JALISCO</span></h1>
                     <p>Our Kitchen is the expression of our Mexican <br />
                         culture through good food.</p>
                 </div>
+                
             </div>
            
         </>

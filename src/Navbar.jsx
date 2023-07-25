@@ -1,7 +1,12 @@
-import React from "react";
+// import React from "react";
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Logo from './assets/LOGO.png';
+
+
+import { useState, useEffect } from "react";
+// import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
 
 const navigation = [
     { name: 'HOME', href: '#home', current: false },
@@ -15,11 +20,69 @@ function classNames(...classes) {
 }
 
 function Navbar() {
+    let Size='';
+    if(window.innerWidth > 1500){
+        console.log("entro grande")
+        Size ='250px';
+    } else{
+        console.log("else grande")
+        Size ='150px';
+    }
+
+    const [nav, setNav] = useState(false);
+    const [color, setColor] = useState("transparent");
+    const [textColor, setTextColor] = useState("white");
+    const [logoSize, setLogoSize] = useState(Size);
+    
+  
+    const handleNav = () => {
+      setNav(!nav);
+    };
+  
+    useEffect(() => {
+      const changeColor = () => {
+        if (window.innerWidth > 1500) {
+            console.log("entrooo")
+            if (window.scrollY >= 90) {
+                setColor("#004857");
+                setTextColor("#000000");
+                setLogoSize("200px");
+            } else {
+                setColor("transparent");
+                setTextColor("#ffffff");
+                setLogoSize("250px");
+            }
+        } else {
+            if (window.scrollY >= 90) {
+                setColor("#004857");
+                setTextColor("#000000");
+                setLogoSize("100px");
+            } else {
+                setColor("transparent");
+                setTextColor("#ffffff");
+                setLogoSize("150px");
+            }
+        } 
+      };
+     
+      window.addEventListener("scroll", changeColor);
+    }, []);
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 1500) {
+            setLogoSize('250px')
+        } else {
+            setLogoSize('150px')
+            
+        } 
+      });
+ 
     return (
         <Disclosure as="nav" className="header_nav">
             {({ open, close }) => (
                 <>
-                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div style={{ backgroundColor: `${color}` }}
+      className=" uppercase left-0 top-0 w-full z-[50] ease-in duration-300 items-center  " >
                         <div className="flex items-center justify-center">
                             <div className="flex items-center">
                                 <div className="hidden md:block">
@@ -30,8 +93,8 @@ function Navbar() {
                                         <a href="#about" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                             ABOUT
                                         </a>
-                                        <img width='380px' className='d-flex' src={Logo} alt="Mi imagen" />
-                                        <a href="#menu" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
+                                        <img width={logoSize} className='m-5 d-flex' src={Logo} alt="Mi imagen" />
+                                        <a href="#menu" onClick={close} className=" text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                             MENU
                                         </a>
                                         <a href="#platter" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
@@ -41,7 +104,7 @@ function Navbar() {
                                 </div>
                             </div>
                             <div className='home-reponses md:hidden'>
-                                <img width='150px' className='z-20 py-5 d-flex ' src={Logo} alt="Mi imagen" />
+                                <img width={logoSize} className='z-20 py-5 d-flex ' src={Logo} alt="Mi imagen" />
                                 <div className="-mr-2 flex md:hidden flex-col h-full justify-center"> {/* Agregar clase flex-col y h-full */}
                                     {/* Mobile menu button */}
                                     <Disclosure.Button className="z-20 inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -63,7 +126,7 @@ function Navbar() {
                             enter="menu-enter"
                             exit="menu-exit"
                         >
-                            <div className="flex flex-col items-center pt-60">
+                            <div className="flex flex-col items-center" style={{paddingTop: '40%'}}>
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
