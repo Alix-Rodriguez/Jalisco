@@ -78,7 +78,7 @@ function Navbar() {
       });
  
     return (
-        <Disclosure as="nav" className="header_nav">
+        <Disclosure  as="nav" className="header_nav">
             {({ open, close }) => (
                 <>
                     <div style={{ backgroundColor: `${color}` }}
