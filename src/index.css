@@ -266,10 +266,12 @@
 
 .item2_about {
     text-align: center;
+    padding-top: 6rem;
+    padding-right: 3rem;
 }
 
 .item2_about h1 {
-    font-size: 120px;
+    font-size: 7rem;
     letter-spacing: -6px;
     line-height: 157px;
     text-transform: uppercase;
@@ -283,14 +285,17 @@
 }
 
 .item2_about p {
-    width: 601px;
+    width: 27rem;
     height: 485px;
     font-size: 22px;
     line-height: 23px;
     color: #004857;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
+    text-align: justify;
+    padding-left: 0.5rem;
+     
+    
 }
 
 
@@ -342,11 +347,11 @@
 .platos_comida img {
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 
 .platos_comida h1 {
-    font-size: 9.5rem;
     letter-spacing: -8px;
     line-height: 235px;
     text-transform: uppercase;
@@ -354,6 +359,7 @@
     font-family: "Commador";
     filter: drop-shadow(0px 36px 9px rgba(0, 0, 1, 0.33));
     text-align: center;
+    font-size: 9.1rem;
 }
 
 .platos_comida div div button {
@@ -442,7 +448,7 @@
     line-height: 28px;
     color: #ffffff;
     font-weight: 500;
-    font-family: "Montserrat Roman";
+     font-family: 'Montserrat', sans-serif;
 }
 
 .item2-div3-footer h1 span {
@@ -459,7 +465,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
+.item3_footer .flex{
+    width: 100%;
+    justify-content: space-around;
+}
+.item3_footer .flex a img{
+    width: 3rem;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1618px) {
