@@ -20,9 +20,6 @@
 }
 
 
-.header_nav{
-    z-index: 3;
-}
 
 .carousel .thumbs,
 .carousel-status {
@@ -37,7 +34,7 @@
 /* CONTENEDOR HOME */
 .header_nav {
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
