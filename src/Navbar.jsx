@@ -22,82 +22,91 @@ function classNames(...classes) {
 
 
 function Navbar() {
-    let Size='';
-    if(window.innerWidth > 1500){
+    let Size = '';
+    if (window.innerWidth > 1500) {
         console.log("entro grande")
-        Size ='250px';
-    } else{
+        Size = '250px';
+    } else {
         console.log("else grande")
-        Size ='150px';
+        Size = '150px';
     }
 
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState("transparent");
     const [textColor, setTextColor] = useState("white");
     const [logoSize, setLogoSize] = useState(Size);
-    
-  
+    const [zIndex,setzIndex] = useState('2')
+
     const handleNav = () => {
-      setNav(!nav);
+        setNav(!nav);
     };
-  
-    function handleChange () {
+
+    function handleChange() {
         console.log("object")
     }
-   
+
     useEffect(() => {
-      const changeColor = () => {
-        if (window.innerWidth > 1500) {
-            console.log("entrooo")
-            if (window.scrollY >= 90) {
-                setColor("#004857");
-                setTextColor("#000000");
-                setLogoSize("200px");
+        const changeColor = () => {
+            if (window.innerWidth > 1500) {
+                console.log("entrooo")
+                if (window.scrollY >= 90) {
+                    setColor("#004857");
+                    setTextColor("#000000");
+                    setLogoSize("200px");
+                } else {
+                    setColor("transparent");
+                    setTextColor("#ffffff");
+                    setLogoSize("250px");
+                }
             } else {
-                setColor("transparent");
-                setTextColor("#ffffff");
-                setLogoSize("250px");
+                if (window.scrollY >= 90) {
+                    setColor("#004857");
+                    setTextColor("#000000");
+                    setLogoSize("100px");
+                } else {
+                    setColor("transparent");
+                    setTextColor("#ffffff");
+                    setLogoSize("150px");
+                }
             }
-        } else {
-            if (window.scrollY >= 90) {
-                setColor("#004857");
-                setTextColor("#000000");
-                setLogoSize("100px");
-            } else {
-                setColor("transparent");
-                setTextColor("#ffffff");
-                setLogoSize("150px");
-            }
-        } 
-      };
-     
-      window.addEventListener("scroll", changeColor);
+        };
+
+        window.addEventListener("scroll", changeColor);
     }, []);
 
-      window.addEventListener('resize', () => {
+    window.addEventListener('resize', () => {
         if (window.innerWidth > 1500) {
             setLogoSize('250px')
         } else {
             setLogoSize('150px')
-            
-        } 
-      });
 
-      
-    
- 
+        }
+    });
+
+    function handleChange() {
+        const nav = document.querySelector('.header_nav')
+        console.log(nav)
+        if (nav.getAttribute('data-headlessui-state') === 'open') {
+            setzIndex('2')
+        } else{
+            setzIndex('10')
+        }
+
+    }
+
+
     return (
-        <Disclosure  as="nav" className="header_nav">
+        <Disclosure style={{zIndex: `${zIndex}`}} as="nav" className="header_nav">
             {({ open, close }) => (
                 <>
                     <div style={{ backgroundColor: `${color}` }}
-      className=" uppercase left-0 top-0 w-full z-[50] ease-in duration-300 items-center  " >
+                        className=" uppercase left-0 top-0 w-full z-[50] ease-in duration-300 items-center  " >
                         <div className="flex items-center justify-center">
                             <div className="flex items-center">
                                 <div className="hidden md:block">
                                     <div className="ml-10 flex items-center space-x-12">
                                         <a href="#home" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
-                                        <span style={{ color: '#00acce' }}>HO</span><span style={{ color: '#67bfb1' }}>ME</span>
+                                            <span style={{ color: '#00acce' }}>HO</span><span style={{ color: '#67bfb1' }}>ME</span>
                                         </a>
                                         <a href="#about" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                             ABOUT
@@ -135,12 +144,16 @@ function Navbar() {
                             enter="menu-enter"
                             exit="menu-exit"
                         >
-                            <div className="flex flex-col items-center" style={{paddingTop: '40%'}}>
+                            <div className="flex flex-col items-center" style={{ paddingTop: '40%' }}>
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        onClick={close} // Add onClick to close the panel when a link is clicked
+                                        onClick={() => {
+                                            close();
+                                            handleChange();
+                                        }}
+                                        // Add onClick to close the panel when a link is clicked
                                         className={classNames(
                                             item.current ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
                                             "block rounded-md px-3 py-8 text-5xl font-medium "
