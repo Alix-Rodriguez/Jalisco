@@ -18,7 +18,14 @@
 }
 
 
-
+/* Estilo para el enlace en hover (color azul claro) */
+.header_nav a:hover .text-azul-light {
+    color: #00ACCE;
+}
+/* Estilo para el enlace en hover (color verde claro) */
+.header_nav a:hover .text-verde-light {
+    color: #67BFB1;
+}
 
 .nav-hidden {
     display: none;

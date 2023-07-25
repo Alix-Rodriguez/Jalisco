@@ -35,7 +35,7 @@ function Navbar() {
     const [color, setColor] = useState("transparent");
     const [textColor, setTextColor] = useState("white");
     const [logoSize, setLogoSize] = useState(Size);
-    const [zIndex,setzIndex] = useState('2')
+    const [zIndex, setzIndex] = useState('2')
 
     const handleNav = () => {
         setNav(!nav);
@@ -85,10 +85,9 @@ function Navbar() {
 
     function handleChange() {
         const nav = document.querySelector('.header_nav')
-        console.log(nav)
         if (nav.getAttribute('data-headlessui-state') === 'open') {
             setzIndex('2')
-        } else{
+        } else {
             setzIndex('10')
         }
 
@@ -96,7 +95,7 @@ function Navbar() {
 
 
     return (
-        <Disclosure style={{zIndex: `${zIndex}`}} as="nav" className="header_nav">
+        <Disclosure style={{ zIndex: `${zIndex}` }} as="nav" className="header_nav">
             {({ open, close }) => (
                 <>
                     <div style={{ backgroundColor: `${color}` }}
@@ -105,25 +104,57 @@ function Navbar() {
                             <div className="flex items-center">
                                 <div className="hidden md:block">
                                     <div className="ml-10 flex items-center space-x-12">
-                                        <a href="#home" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
-                                            <span style={{ color: '#00acce' }}>HO</span><span style={{ color: '#67bfb1' }}>ME</span>
+                                        <a
+                                            href="#home"
+                                            onClick={close}
+                                            className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                                        >
+                                            <span className="text-azul-light">HO</span>
+                                            <span className="text-verde-light">ME</span>
                                         </a>
-                                        <a href="#about" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
-                                            ABOUT
+                                        <a
+                                            href="#about"
+                                            onClick={close}
+                                            className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                                        >
+                                            <span className="text-azul-light">ABO</span>
+                                            <span className="text-verde-light">UT</span>
                                         </a>
-                                        <img width={logoSize} className='m-5 d-flex' src={Logo} alt="Mi imagen" />
-                                        <a href="#menu" onClick={close} className=" text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
-                                            MENU
+                                        <img
+                                            width={logoSize}
+                                            className="m-5 d-flex"
+                                            src={Logo}
+                                            alt="Mi imagen"
+                                        />
+                                        <a
+                                            href="#menu"
+                                            onClick={close}
+                                            className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                                        >
+                                            <span className="text-azul-light">ME</span>
+                                            <span className="text-verde-light">NU</span>
                                         </a>
-                                        <a href="#platter" onClick={close} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
-                                            PLATTERS
+                                        <a
+                                            href="#platter"
+                                            onClick={close}
+                                            className="text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                                        >
+                                            <span className="text-azul-light">PLA</span>
+                                            <span className="text-verde-light">TTERS</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div className='home-reponses md:hidden'>
-                                <img width={logoSize} className='z-20 py-5 d-flex ' src={Logo} alt="Mi imagen" />
-                                <div className="-mr-2 flex md:hidden flex-col h-full justify-center"> {/* Agregar clase flex-col y h-full */}
+                            <div className="home-reponses md:hidden">
+                                <img
+                                    width={logoSize}
+                                    className="z-20 py-5 d-flex "
+                                    src={Logo}
+                                    alt="Mi imagen"
+                                />
+                                <div className="-mr-2 flex md:hidden flex-col h-full justify-center">
+                                    {" "}
+                                    {/* Agregar clase flex-col y h-full */}
                                     {/* Mobile menu button */}
                                     <Disclosure.Button onClick={handleChange} className="z-20 inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                         <span className="sr-only">Open main menu</span>
